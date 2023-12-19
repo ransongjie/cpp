@@ -29,7 +29,7 @@ int max2(int num1, int num2){
 //lambda表达式
 void test(){
     int x = 10;
-    //[]外部变量捕获方式 值捕获 引用捕获 [x, &y] [=](隐式值捕获)
+    //[]外部变量捕获方式 值捕获, 引用捕获 [x, &y], [=](隐式值捕获)
     //值捕获 不影响外部参数
     auto func = [x]() { return x * 2; };
     int a=func();

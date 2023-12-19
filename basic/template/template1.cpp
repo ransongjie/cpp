@@ -28,7 +28,7 @@ class Stack {
     vector<T> elems;     
  
   public: 
-    void push (T const& elem){
+    void push (T const& elem){// 等价于const T& elem
         //追加传入元素的副本
         elems.push_back(elem); 
     } 

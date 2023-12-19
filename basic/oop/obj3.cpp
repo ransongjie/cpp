@@ -29,7 +29,7 @@ class A{
         A(string name){
             this->name=name;
         }
-        A operator+(const A& a){
+        A operator+(const A& a){// 常量引用
             return A(this->name+a.name);
         }
 };

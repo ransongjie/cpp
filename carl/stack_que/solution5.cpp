@@ -9,7 +9,9 @@ using namespace std;
  * 逆波兰表达式求值
  * switch 不支持string
  * stoll: string 》long long stoll(), #include <string>
- * vector<string> vec: vec[i], vec.push_back(), vec.push_front(), vec.size()
+ * vector<string> vec: 
+ * clear(), vec[i], vec.push_back(), vec.push_front(), vec.size()
+ * resize(size), begin(), end()
  */
 
 class Solution

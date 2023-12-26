@@ -62,7 +62,7 @@ void test2()
 }
 
 /*
-string to long long
+string to long long int
 */
 void test3()
 {

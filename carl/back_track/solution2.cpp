@@ -4,6 +4,11 @@ using namespace std;
 /*
 https://leetcode.cn/problems/combination-sum-iii/
 组合总和 III
+找出所有相加之和为 n 的 k 个数的组合。组合中只允许含有 1 - 9 的正整数，并且每种组合中不存在重复的数字。
+
+数组candidates无重复元素
+结果组合内，元素不同，用i+1解决
+结果组合间，解集不能包含重复的组合，用回溯解决，叶子结点
 */
 class Solution
 {

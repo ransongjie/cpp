@@ -20,6 +20,7 @@
 | error       | error exception   |
 | template    | generic paradigm  |
 | concurrent  | concurrent        |
+| random|random|
 | cpp17       | cpp17             |
 | more        | more              |
 

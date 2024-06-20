@@ -12,5 +12,10 @@ int main()
     std::cout << "Shape: " << shape1->getType() << std::endl;
     std::cout << "Shape: " << shape2->getType() << std::endl;
 
+    delete shape1;
+    delete shape2;
+    shape1=nullptr;
+    shape2=nullptr;
+
     return 0;
 }

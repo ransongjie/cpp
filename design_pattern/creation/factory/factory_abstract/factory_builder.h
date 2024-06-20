@@ -5,6 +5,6 @@
 class FactoryBuilder
 {
 public:
-    Factory *buildFactory(enum EFACTORY efactory);
+    static Factory *buildFactory(enum EFACTORY efactory);
 };
 #endif

@@ -6,25 +6,22 @@ g++ shape.cpp main.cpp
 */
 int main()
 {
-    // 对象分配在栈中
-    ShapeFactory shapeFactory;
-
-    Shape *circle = shapeFactory.buildShape(CIRCLE);
+    Shape *circle = ShapeFactory::buildShape(CIRCLE);
     circle->draw();
 
-    Shape *square = shapeFactory.buildShape(SQUARE);
+    Shape *square = ShapeFactory::buildShape(SQUARE);
     square->draw();
 
-    Shape *rectangle = shapeFactory.buildShape(RECTANGLE);
+    Shape *rectangle = ShapeFactory::buildShape(RECTANGLE);
     rectangle->draw();
 
     // 避免悬空指针
     delete rectangle;
-    rectangle = nullptr;
     delete square;
-    square = nullptr;
     delete circle;
+    rectangle = nullptr;
+    square = nullptr;
     circle = nullptr;
-
+    
     return 0;
 }

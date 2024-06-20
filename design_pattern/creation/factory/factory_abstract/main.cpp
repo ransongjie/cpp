@@ -8,11 +8,8 @@ g++ shape.cpp color.cpp factory.cpp factory_builder.cpp main.cpp
 
 int main()
 {
-    // 创建工厂的工厂
-    FactoryBuilder factoryBuilder;
-
     // 创建工厂
-    Factory *shapeFactory = factoryBuilder.buildFactory(SHAPE_FACTORY);
+    Factory *shapeFactory = FactoryBuilder::buildFactory(SHAPE_FACTORY);
 
     // 创建产品
     Shape *circle = shapeFactory->buildShape(CIRCLE);

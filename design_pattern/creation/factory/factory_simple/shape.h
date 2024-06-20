@@ -36,7 +36,7 @@ class ShapeFactory
 {
 public:
     // 返回局部对象指针
-    Shape *buildShape(enum ESHAPE eshape);
+    static Shape *buildShape(enum ESHAPE eshape);
 };
 
 #endif

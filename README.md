@@ -110,3 +110,25 @@ todo
 | package   | description   |
 |-----------|---------------|
 | offer_special     | offer special |
+
+# 运行
+```shell
+# ubuntu18 安装 g++ 环境
+sudo apt install build-essential
+g++ --version
+
+# 一般
+g++ example1.cpp
+./a.out
+
+# 有头文件
+g++ *.cpp
+./a.out
+
+# 使用 pthread 库
+g++ *.cpp -pthread
+./a.out
+
+# cpp11
+g++ *.cpp -std=c++11
+```

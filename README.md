@@ -131,4 +131,7 @@ g++ *.cpp -pthread
 
 # cpp11
 g++ *.cpp -std=c++11
+
+# 头文件
+g++ *.cpp -I ./include -std=c++11
 ```

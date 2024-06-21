@@ -28,7 +28,7 @@ private:
 public:
     Observer(Target *target) : target(target) {}
     ~Observer() {}
-    // ~Observer()// main方法中target栈上分配将自动调用Target的delete方法
+    // ~Observer()// main方法中target栈上分配将自动调用Target的析构函数，并释放内存空间
     // {
     //     delete target;// error: double free or corruption (out)
     //     target = nullptr;
